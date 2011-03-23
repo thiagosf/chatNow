@@ -1,0 +1,44 @@
+/* Body and reset
+-----------------------------------------------*/
+* {margin:0;padding:0;list-style:0;outline:0;}
+body {font-family:arial,consolas,tahoma;color:#000;}
+a img {border:0;}
+a {color:#004499;}
+a:visited {color:#555;}
+
+/* Header
+-----------------------------------------------*/
+#header {background-color:#003467;background: -moz-linear-gradient(top, #003467, #006699);background:-webkit-gradient(linear, left top, left bottom, from(#003467), to(#006699));padding:10px;border-bottom:1px solid #000;}
+#header h1 {color:#fff;font:normal 22px arial,tahoma;letter-spacing:-0.05em;}
+#logout {}
+
+/* Nav
+-----------------------------------------------*/
+#nav {padding:10px;background:#333;border-bottom:1px solid #000;}
+#nav a {color:#fff;font-size:12px;padding:0 10px;}
+#nav a:hover {}
+
+/* Content
+-----------------------------------------------*/
+#content {margin:10px;}
+#content h2 {font:normal 18px arial,tahoma;letter-spacing:-1px;margin:0 0 10px 0;color:#333;}
+#content p {font:normal 12px arial,tahoma;margin:0 0 10px 0;color:#000;}
+#content a {font:normal 12px arial,tahoma;}
+
+#content table {width:100%;background:#ccc;border-collapse:collapse;border:1px solid #333;}
+#content table th {background:#006600;color:#fff;text-align:left;padding:5px;font-size:13px;}
+#content table td {background:#eee;padding:5px;font-size:12px;}
+#content table tr:nth-child(2n+1) td {background:#d7d7d7;}
+
+#rooms_filter {border:1px solid #999;padding:5px;font-size:12px;margin:0 0 10px 0;background:#eee;}
+
+#content form {font-size:12px;}
+#content form .block_field {margin:0 0 20px 0;}
+#content form label {display:block;color:#555;}
+#content form input {font:bold 16px arial,tahoma;}
+#content form button {}
+
+/* Footer
+-----------------------------------------------*/
+#footer {margin:10px 0;border-top:1px solid #ccc;padding:10px;background:-moz-linear-gradient(-90deg, #ddd, #fff);background:-webkit-gradient(linear, left top, left bottom, from(#ddd), to(#fff));}
+#footer p {text-align:center;font:bold 12px consolas,arial,tahoma;color:#cc3333;}

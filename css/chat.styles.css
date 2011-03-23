@@ -1,0 +1,191 @@
+/* Body and reset
+-----------------------------------------------*/
+* {margin:0;padding:0;list-style:0;outline:0;}
+body {font-family:arial,tahoma;color:#000;margin:10px;}
+a img {border:0;}
+
+/* Header
+-----------------------------------------------*/
+#header {position:fixed;left:0;top:0;width:100%;height:100px;background:#A1B7C8;z-index:100;}
+#header h1 {position:fixed;left:0px;top:0px;width:270px;height:100px;background:url(../images/logo-chat.png) no-repeat left top;text-indent:-9999em;overflow:hidden;}
+#logout {position:fixed;right:10px;top:10px;width:30px;height:30px;background:url(../images/logout.png) no-repeat left top;text-indent:-9999em;overflow:hidden;}
+
+#room_name {position:absolute;left:0;top:25px;border-left:1px solid #7d99ae;margin:0px 0 0 280px;}
+#room_name p {float:left;font:normal 14px/16px arial;padding:0 20px;}
+#room_name p span {color:#333;display:block;font:bold 32px arial,tahoma;letter-spacing:-1px;}
+
+/* Menu
+-----------------------------------------------*/
+#menu {padding:0px;position:fixed;left:0;top:100px;width:220px;background:#3b3b3b;}
+#menu a {display:block;color:#333;font:bold 12px arial,tahoma;background:#f1f1f1;margin:10px 10px 0 10px ;padding:5px;border:1px solid #000;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;text-decoration:none;}
+#menu a:hover {color:#000;}
+.active_user_talk {background:#006699 !important;color:#fff !important;}
+#users_connects {font:normal 18px arial,tahoma;letter-spacing:-1px;color:#333;margin:0 0 15px 0;}
+
+#box_users {height:300px;overflow:auto;margin:10px 0 0 0;background:#1a1a1a;padding:0 0 10px 0;position:relative;}
+#users_online {background:#444;color:#bbc8d2;padding:10px;font:normal 18px arial;border-bottom:1px solid #555;}
+
+/* Content
+-----------------------------------------------*/
+#content {padding:0;margin:110px 0 140px 220px;}
+
+/* default message */
+.box_msg {margin-bottom:10px;font-size:14px;overflow:hidden;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background:#fff;border:1px solid #ccc;}
+.head_msg {display:block;background:#f1f1f1;padding:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;-webkit-border-radius-topleft:5px;-webkit-border-radius-topright:5px;height:18px;}
+.time_msg {font:normal 10px tahoma,arial !important;color:#333;background:#ccc;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:2px 4px;}
+.remove_message {float:right;font:bold 11px arial,tahoma;color:#fff;background:#333;padding:1px 3px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;cursor:pointer;}
+.user_name {color:#204DA2;font-weight:bold;cursor:pointer;}
+.name_to {color:#000;font-weight:bold;cursor:pointer;}
+.message_sent {display:block;font:normal 22px/18px arial,tahoma;color:#333;letter-spacing:-1px;padding:5px 5px 5px 10px;}
+span.user_me a {background-image:url(../images/emoticons/ksk-yellowstar.png) !important;background-repeat:no-repeat !important;background-position:5px center !important;padding-left:25px !important;}
+
+/* reserved */
+.box_msg_reserved {background:#ffffcc !important;border:1px solid #999 !important;}
+.box_msg_reserved .head_msg {background:#99cc99 !important;}
+.box_msg_reserved .time_msg {color:#fff !important;background:#990000 !important;}
+.box_msg_reserved .user_name {}
+.box_msg_reserved .name_to {}
+.box_msg_reserved .message_sent {}
+
+/* exit */
+.box_msg_exit {margin-bottom:10px;font-size:14px;overflow:hidden;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background:#e1e1e1;border:1px solid #999 !important;}
+.box_msg_exit .message_user_exit {display:block;font:normal 22px/18px arial,tahoma;color:#cc0000;letter-spacing:-1px;padding:5px 5px 5px 10px;font-style:italic;}
+.box_msg_exit .head_msg {background:#bac7d4 !important;}
+.box_msg_exit .time_msg {color:#fff !important;background:#990000 !important;}
+.box_msg_exit .user_name {}
+.box_msg_exit .name_to {}
+.box_msg_exit .message_sent {}
+
+/* entry */
+.box_msg_entry {margin-bottom:10px;font-size:14px;overflow:hidden;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background:#e1e1e1;border:1px solid #999 !important;}
+.box_msg_entry .message_user_entry {display:block;font:normal 22px/18px arial,tahoma;color:#cc0000;letter-spacing:-1px;padding:5px 5px 5px 10px;font-style:italic;}
+.box_msg_entry .head_msg {background:#bac7d4 !important;}
+.box_msg_entry .time_msg {color:#fff !important;background:#990000 !important;}
+.box_msg_entry .user_name {}
+.box_msg_entry .name_to {}
+.box_msg_entry .message_sent {}
+
+/* to you */
+.to_you_message {background:#e1e1e1;border:1px solid #999;}
+.to_you_message .head_msg {background:#bac7d4;}
+.to_you_message .time_msg {color:#fff !important;background:#990000 !important;}
+.to_you_message .user_name {}
+.to_you_message .name_to {}
+.to_you_message .message_sent {color:#333;}
+
+/* for you */
+.for_you_message {background:#e1e1e1;border:1px solid #999;}
+.for_you_message .head_msg {background:#bac7d4;}
+.for_you_message .time_msg {color:#fff !important;background:#990000 !important;}
+.for_you_message .user_name {}
+.for_you_message .name_to {}
+.for_you_message .message_sent {color:#333;}
+
+/* Message inline */
+.box_msg_inline {border:none;background:none;}
+.box_msg_inline .head_msg {display:inline !important;vertical-align:top;padding:0 !important;background:none;}
+.box_msg_inline .time_msg {color:#555 !important;background:none !important;}
+.box_msg_inline .user_name {}
+.box_msg_inline .name_to {}
+.box_msg_inline .remove_message {background:none;color:#333;}
+.box_msg_inline .message_sent {display:inline !important;font-size:14px !important;letter-spacing:0 !important;padding:0;}
+.box_msg_inline .message_sent img {vertical-align:bottom;}
+.box_msg_inline .message_user_entry, .box_msg_inline .message_user_exit {display:inline !important;font-size:14px !important;letter-spacing:0 !important;padding:0 !important;}
+
+/* Message inline reserved */
+.box_msg_inline.box_msg_reserved {background:none !important;border:none !important;}
+.box_msg_inline.box_msg_reserved .head_msg {background:none !important;}
+.box_msg_inline.box_msg_reserved .time_msg {}
+.box_msg_inline.box_msg_reserved .user_name {}
+.box_msg_inline.box_msg_reserved .name_to {}
+.box_msg_inline.box_msg_reserved .message_sent {padding:0;}
+
+/* to you inline */
+.box_msg_inline.to_you_message {background:#bbccff !important;}
+
+/* for you inline */
+.box_msg_inline.for_you_message {background:#bbccff !important;}
+
+/* exit */
+.box_msg_inline.box_msg_exit {background:none;border:none !important;}
+.box_msg_inline.box_msg_exit .message_user_exit {color:#cc0000;font-style:italic;}
+.box_msg_inline.box_msg_exit .head_msg {background:none !important;}
+.box_msg_inline.box_msg_exit .time_msg {}
+.box_msg_inline.box_msg_exit .user_name {}
+.box_msg_inline.box_msg_exit .name_to {}
+
+/* entry */
+.box_msg_inline.box_msg_entry {background:none;border:none !important;}
+.box_msg_inline.box_msg_entry .message_user_entry {color:#cc0000;font-style:italic;}
+.box_msg_inline.box_msg_entry .head_msg {background:none !important;}
+.box_msg_inline.box_msg_entry .time_msg {}
+.box_msg_inline.box_msg_entry .user_name {}
+.box_msg_inline.box_msg_entry .name_to {}
+
+/* Message background colors */
+.box_msg_inline.box_msg_reserved.inline_blue {background:#bbccff !important;}
+.box_msg_inline.box_msg_reserved.inline_purple {background:#aabbff !important;}
+.box_msg_inline.box_msg_reserved.inline_pink {background:#ddaaff !important;}
+.box_msg_inline.box_msg_reserved.inline_red {background:#ffaaaa !important;}
+.box_msg_inline.box_msg_reserved.inline_orange {background:#ffddaa !important;}
+.box_msg_inline.box_msg_reserved.inline_yellow {background:#ffffaa !important;}
+.box_msg_inline.box_msg_reserved.inline_green {background:#ccffbb !important;}
+
+.image_message {padding:5px;}
+.video_youtube {padding:5px;}
+
+/* Tools
+-----------------------------------------------*/
+#tools {position:fixed;bottom:0;left:0;background:#bbc8d2;width:100%;height:130px;min-width:1024px;}
+#box_tools {}
+#form_enviar {}
+
+#box_user_tools {height:120px;float:left;/*width:360px;*/margin:10px 10px 0 0;}
+#box_user_tools p {}
+#name_user {font:bold 16px arial,tahoma;color:#000;background:#a1b7c8;padding:10px;float:left;-moz-border-radius:0 5px 5px 0;-webkit-border-radius:0 5px 5px 0;-border-radius:0 5px 5px 0;}
+#name_user span {color:#204DA2;}
+
+#box_settings {float:left;width:100%;padding:10px 0 0 10px;}
+#box_settings div {margin-bottom:10px;}
+#box_settings label {font:bold 12px arial;}
+#box_settings input {float:left;margin:1px 5px 0 0;}
+
+#box_message_tools {float:left;height:130px;/*width:570px;*/}
+
+#message_box {background:url(../images/input-msg.png) no-repeat left top;height:45px;width:565px;float:left;margin-top:35px;}
+#message_box input {float:left;width:495px;height:30px;padding:0 10px;margin:7px 0 0 0;border:0;background:none;}
+#message_box button {float:right;width:50px;height:45px;opacity:0.7;text-indent:-9999em;overflow:hidden;background:none;border:0;cursor:pointer;}
+.box_emoticons {position:absolute;top:86px;left:430px;background:#333;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:3px 10px;border:1px solid #000;}
+.box_emoticons img {cursor:pointer;}
+
+#box_talk {position:absolute;top:0;left:380px;padding:0;border:0px solid #000;display:none;height:30px;}
+#box_talk span {float:left;padding:0 0 0 0px;background:url(../images/back-tab-link.gif) no-repeat right top #3d6787;margin-right:2px;-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px;height:30px;overflow:hidden;}
+#box_talk span a {color:#fff;font-size:12px;text-decoration:none;line-height:30px;padding:0 10px;}
+#box_talk span a.user_tab {float:left;}
+#box_talk span a.close_talk {color:#000;padding:2px 5px;font:bold 18px/27px arial;text-decoration:none;text-indent:-9999em;overflow:hidden;float:right;width:15px;}
+
+label#to {color:#006699;}
+input#message {font:bold 22px arial,tahoma;color:#333;}
+
+#box_overlay {z-index:101;}
+#box_alert {background:#bbc8d2;top:50%;left:50%;width:300px;height:120px;margin:-100px -150px;position:fixed;z-index:102;display:none;-moz-border-radius:10px;-moz-box-shadow:#111 0px 0px 10px;-webkit-border-radius:10px;-webkit-box-shadow:#111 0px 0px 10px;padding-top:30px;border:1px solid #fff;}
+#box_alert p {padding:10px;font:bold 18px arial;color:#333;}
+#box_alert p a {font:bold 12px arial;padding:5px 30px;background:#cc3333;color:#fff;text-decoration:none;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+#box_alert p a:hover {background:#cc0000;}
+.center {text-align:center;}
+
+/* Box login
+-----------------------------------------------*/
+#box_login {width:300px;margin:20px auto;padding:10px;border:1px solid #ccc;background:#eee;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;
+	-moz-box-shadow:#fff 0 0 15px inset;
+	-webkit-box-shadow:#fff 0 0 15px inset;
+}
+#box_login h2 {font:bold 26px consolas,arial,tahoma;color:#004499;border-bottom:1px solid #ccc;padding:0 0 5px 0;margin:0 0 10px 0;letter-spacing:-1px;}
+#box_login .message_error {font:bold 12px arial,tahoma;color:#cc0000;margin:0 0 10px 0;}
+#box_login form {}
+#box_login form .block_field {margin:0 0 10px 0;}
+#box_login form label {display:block;font:bold 11px arial,tahoma;color:#333;margin:0 0 5px 0;}
+#box_login form input {font:bold 30px arial,tahoma;letter-spacing:-1px;width:100%;}
+#box_login form select {font:bold 16px arial,tahoma;letter-spacing:-1px;width:100%;}
+#box_login form img {margin:0 0 5px 0;}
+#box_login form button {width:100%;font:bold 16px arial,tahoma;}

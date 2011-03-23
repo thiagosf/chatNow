@@ -1,0 +1,12 @@
+#update_log {width:300px;margin:0 auto;margin-bottom:20px;background:#ddd;padding:10px;-moz-border-radius:10px;-moz-border-radius:10px;border-radius:10px;border:1px solid #999;}
+#update_log h2 {font:bold 20px arial,tahoma;letter-spacing:-1px;color:#004499;margin:0 0 10px 0;border-bottom:1px solid #999;padding:0 0 5px 0;}
+#update_log h3 {font:bold 16px arial,tahoma;letter-spacing:-1px;color:#000;margin:0 0 5px 0;}
+#update_log ul {}
+#update_log ul li {list-style:square inside;font:normal 12px consolas,arial,tahoma;letter-spacing:-1px;}
+
+#box_download {width:300px;margin:0 auto;background:#ffffdd;padding:10px;-moz-border-radius:10px;-moz-border-radius:10px;border-radius:10px;border:1px solid #ee9966;}
+#box_download a {color:#cc0000;font:bold 26px candara,arial,tahoma;letter-spacing:-2px;}
+#box_download a:hover {text-decoration:none;}
+
+#footer {background:url(../images/footer-chat.jpg) no-repeat top center;width:361px;height:156px;margin:0 auto;margin-top:20px;}
+#footer a {width:70px;height:60px;background:url(../images/logo-thiago.png) no-repeat top center;text-indent:-9999em;overflow:hidden;float:left;margin:40px 0 0 140px;}
