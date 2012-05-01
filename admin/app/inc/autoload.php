@@ -3,6 +3,9 @@
 // Header
 header('Content-type: text/html; charset=UFT-8', true);
 
+// Default date
+date_default_timezone_set('America/Sao_Paulo');
+
 set_time_limit(0);
 
 // Ob start

@@ -21,6 +21,7 @@
 		<a href="index.php">Users</a> | 
 		<a href="rooms.php">Rooms</a> | 
 		<a href="blocked.php">IP Blocked</a> |
+		<a href="admin_users.php">Admin Users</a> | 
 		<a href="logout.php">Logout</a>
 	</div>
 	<?php

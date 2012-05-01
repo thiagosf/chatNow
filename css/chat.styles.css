@@ -6,24 +6,24 @@ a img {border:0;}
 
 /* Header
 -----------------------------------------------*/
-#header {position:fixed;left:0;top:0;width:100%;height:100px;background:#A1B7C8;z-index:100;}
+#header {position:fixed;left:0;top:0;width:100%;height:100px;background:#ccc;z-index:100;border-bottom:1px solid #555;}
 #header h1 {position:fixed;left:0px;top:0px;width:270px;height:100px;background:url(../images/logo-chat.png) no-repeat left top;text-indent:-9999em;overflow:hidden;}
 #logout {position:fixed;right:10px;top:10px;width:30px;height:30px;background:url(../images/logout.png) no-repeat left top;text-indent:-9999em;overflow:hidden;}
 
-#room_name {position:absolute;left:0;top:25px;border-left:1px solid #7d99ae;margin:0px 0 0 280px;}
-#room_name p {float:left;font:normal 14px/16px arial;padding:0 20px;}
-#room_name p span {color:#333;display:block;font:bold 32px arial,tahoma;letter-spacing:-1px;}
+#room_name {position:absolute;left:0;top:0px;border-left:1px solid #bbb;margin:0px 0 0 280px;height:100px;}
+#room_name p {float:left;font:normal 18px/16px arial;padding:20px 20px 0 20px;color:#555;}
+#room_name p span {color:#333;display:block;font:bold 42px arial,tahoma;letter-spacing:-3px;}
 
 /* Menu
 -----------------------------------------------*/
-#menu {padding:0px;position:fixed;left:0;top:100px;width:220px;background:#3b3b3b;}
+#menu {padding:0px;position:fixed;left:0;top:100px;width:220px;background:#3b3b3b;box-shadow:#555 0 0 20px;}
 #menu a {display:block;color:#333;font:bold 12px arial,tahoma;background:#f1f1f1;margin:10px 10px 0 10px ;padding:5px;border:1px solid #000;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;text-decoration:none;}
 #menu a:hover {color:#000;}
 .active_user_talk {background:#006699 !important;color:#fff !important;}
 #users_connects {font:normal 18px arial,tahoma;letter-spacing:-1px;color:#333;margin:0 0 15px 0;}
 
 #box_users {height:300px;overflow:auto;margin:10px 0 0 0;background:#1a1a1a;padding:0 0 10px 0;position:relative;}
-#users_online {background:#444;color:#bbc8d2;padding:10px;font:normal 18px arial;border-bottom:1px solid #555;}
+#users_online {background:#444;color:#fff;padding:10px;font:normal 18px arial;border-bottom:1px solid #555;}
 
 /* Content
 -----------------------------------------------*/
@@ -136,14 +136,14 @@ span.user_me a {background-image:url(../images/emoticons/ksk-yellowstar.png) !im
 
 /* Tools
 -----------------------------------------------*/
-#tools {position:fixed;bottom:0;left:0;background:#bbc8d2;width:100%;height:130px;min-width:1024px;}
+#tools {position:fixed;bottom:0;left:0;background:#ccc;width:100%;height:130px;min-width:1024px;border-top:1px solid #777;}
 #box_tools {}
 #form_enviar {}
 
 #box_user_tools {height:120px;float:left;/*width:360px;*/margin:10px 10px 0 0;}
 #box_user_tools p {}
-#name_user {font:bold 16px arial,tahoma;color:#000;background:#a1b7c8;padding:10px;float:left;-moz-border-radius:0 5px 5px 0;-webkit-border-radius:0 5px 5px 0;-border-radius:0 5px 5px 0;}
-#name_user span {color:#204DA2;}
+#name_user {font:bold 16px arial,tahoma;color:#333;background:#999;padding:10px;float:left;-moz-border-radius:0 5px 5px 0;-webkit-border-radius:0 5px 5px 0;-border-radius:0 5px 5px 0;}
+#name_user span {color:#333;}
 
 #box_settings {float:left;width:100%;padding:10px 0 0 10px;}
 #box_settings div {margin-bottom:10px;}
@@ -155,7 +155,11 @@ span.user_me a {background-image:url(../images/emoticons/ksk-yellowstar.png) !im
 #message_box {background:url(../images/input-msg.png) no-repeat left top;height:45px;width:565px;float:left;margin-top:35px;}
 #message_box input {float:left;width:495px;height:30px;padding:0 10px;margin:7px 0 0 0;border:0;background:none;}
 #message_box button {float:right;width:50px;height:45px;opacity:0.7;text-indent:-9999em;overflow:hidden;background:none;border:0;cursor:pointer;}
-.box_emoticons {position:absolute;top:86px;left:430px;background:#333;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:3px 10px;border:1px solid #000;}
+.box_emoticons {position:absolute;top:79px;left:430px;background:#333;
+	-moz-border-radius:0 0 4px 4px;
+	-webkit-border-radius:0 0 4px 4px;
+	border-radius:0 0 4px 4px;
+	padding:3px 10px;border:1px solid #000;}
 .box_emoticons img {cursor:pointer;}
 
 #box_talk {position:absolute;top:0;left:380px;padding:0;border:0px solid #000;display:none;height:30px;}
@@ -168,24 +172,57 @@ label#to {color:#006699;}
 input#message {font:bold 22px arial,tahoma;color:#333;}
 
 #box_overlay {z-index:101;}
-#box_alert {background:#bbc8d2;top:50%;left:50%;width:300px;height:120px;margin:-100px -150px;position:fixed;z-index:102;display:none;-moz-border-radius:10px;-moz-box-shadow:#111 0px 0px 10px;-webkit-border-radius:10px;-webkit-box-shadow:#111 0px 0px 10px;padding-top:30px;border:1px solid #fff;}
+#box_alert {background:#eee;top:50%;left:50%;width:300px;height:120px;margin:-100px -150px;position:fixed;z-index:102;display:none;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;padding-top:30px;border:1px solid #000;}
 #box_alert p {padding:10px;font:bold 18px arial;color:#333;}
-#box_alert p a {font:bold 12px arial;padding:5px 30px;background:#cc3333;color:#fff;text-decoration:none;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+#box_alert p a {font:bold 12px arial;padding:5px 30px;background:#cc3333;color:#fff;text-decoration:none;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
 #box_alert p a:hover {background:#cc0000;}
 .center {text-align:center;}
 
 /* Box login
 -----------------------------------------------*/
-#box_login {width:300px;margin:20px auto;padding:10px;border:1px solid #ccc;background:#eee;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;
-	-moz-box-shadow:#fff 0 0 15px inset;
-	-webkit-box-shadow:#fff 0 0 15px inset;
+#box_login {
+	width:300px;
+	margin:20px auto;
+	padding:40px 50px ;
+	border:1px solid #bbb;
+	margin-top:150px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-moz-box-shadow:#ccc 0 0 15px;
+	-webkit-box-shadow:#ccc 0 0 15px;
+	background:#eee;
+	background: linear-gradient(center top, #eee, #fff);
+	background: -o-linear-gradient(center top, #eee, #fff);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+	background: -moz-linear-gradient(-90deg, #eee, #fff);
 }
-#box_login h2 {font:bold 26px consolas,arial,tahoma;color:#004499;border-bottom:1px solid #ccc;padding:0 0 5px 0;margin:0 0 10px 0;letter-spacing:-1px;}
+#box_login h2 {font:normal 32px arial,tahoma;color:#555;border-bottom:1px solid #ddd;padding:0 0 5px 0;margin:0 0 10px 0;letter-spacing:-1px;}
 #box_login .message_error {font:bold 12px arial,tahoma;color:#cc0000;margin:0 0 10px 0;}
 #box_login form {}
 #box_login form .block_field {margin:0 0 10px 0;}
-#box_login form label {display:block;font:bold 11px arial,tahoma;color:#333;margin:0 0 5px 0;}
-#box_login form input {font:bold 30px arial,tahoma;letter-spacing:-1px;width:100%;}
+#box_login form .block_submit {text-align:right;margin-bottom:0px;}
+#box_login form label {display:block;font:bold 13px arial,tahoma;color:#333;margin:0 0 5px 0;}
+#box_login form input {font:bold 30px arial,tahoma;letter-spacing:-1px;width:100%;border:1px solid #ddd;}
+#box_login form input:focus {border:1px solid #aaa;box-shadow:#ccc 0 0 5px;}
 #box_login form select {font:bold 16px arial,tahoma;letter-spacing:-1px;width:100%;}
 #box_login form img {margin:0 0 5px 0;}
-#box_login form button {width:100%;font:bold 16px arial,tahoma;}
+#box_login form button {
+	margin-top:20px;
+	text-shadow:0 1px rgba(0, 0, 0, 0.1);
+	border:1px solid #3079ED;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	padding:5px 15px;
+	color:#fff;
+	font-size:20px;
+	font-weight:normal; 
+	cursor:pointer; 
+	width:auto; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4787ED', endColorstr='#4787ED')"; /* IE8+ */ 
+	background-image: linear-gradient(center top, #4D90FE, #4787ED);
+	background-image: -o-linear-gradient(center top, #4D90FE, #4787ED);
+	background-image: -moz-linear-gradient(center top, #4D90FE, #4787ED);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#4D90FE), to(#4787ED));
+}

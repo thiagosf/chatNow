@@ -3,6 +3,9 @@
 // Start session
 session_start();
 
+// Default date
+date_default_timezone_set('America/Sao_Paulo');
+
 // URL fopen
 ini_set('allow_url_fopen', true);
 

@@ -109,6 +109,12 @@ if (isset($_SESSION['chat_login']['id_user']) && isset($_SESSION['chat_login']['
 	exit;
 }
 
+// Code
+$text = (string) ((rand() % 8999) + 1000);
+ 
+// Save code in session
+$_SESSION['captcha_code'] = $text;
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
@@ -183,13 +189,13 @@ if (isset($_SESSION['chat_login']['id_user']) && isset($_SESSION['chat_login']['
 			<img src="captcha.php" />
 			<input type="text" name="captcha" id="captcha" maxlength="4" />
 		</div>
-		<div class="block_field">
+		<div class="block_field block_submit">
 			<button type="submit" value="<?=Locale::setContent('Enter');?>"><?=Locale::setContent('Enter');?></button>
 		</div>
 	</form>
 </div>
 
-
+<!-- 
 <div id="update_log">
 	<h2>Update log</h2>
 	<h3>20/10/2010 - Version 1.0</h3>
@@ -208,7 +214,7 @@ if (isset($_SESSION['chat_login']['id_user']) && isset($_SESSION['chat_login']['
 <div id="footer">
 	<a href="http://thiagosf.net">Thiago S.F.</a>
 </div>
-
+ -->
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

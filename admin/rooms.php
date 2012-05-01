@@ -4,63 +4,6 @@ require('app/inc/autoload.php');
 
 Template::getHeader();
 
-// // Control
-// if (!empty($get))
-// {
-	// $keys = array_keys($get);
-	// switch ($keys[0])
-	// {
-		// case 'delete' : 
-			// $id = (int) $_GET['delete'];
-			// if ($id) {
-				// $users = new UsersModel;
-				// $users->delete($id);
-				// $message = 'User deleted';
-			// }
-			// break;
-			
-		// case 'block_user' : 
-			// $id = (int) $_GET['block_user'];
-			// if ($id) {
-				// $users = new UsersModel;
-				// $users->setData(array('active' => 0));
-				// $users->setFields(array('active'));
-				// $users->update($id);
-				// $message = 'User blocked';
-			// }
-			// break;
-			
-		// case 'block_ip' : 
-			// $ip = $_GET['block_ip'];
-			// if ($ip) {
-			
-				// $ip_block = new IpBlockModel;
-				// $ip_block->setCond('ip = "'.$ip.'"');
-				// $data = $ip_block->load_all();
-				
-				// if (empty($data)) {
-					// $data = new StdClass;
-					// $data->ip = $ip;
-					// $data->permanent = 0;
-					// $data->timestamp = date('Y-m-d H:i:s');
-					// $data->end = date('Y-m-d H:i:s', strtotime('+1 day'));
-					// $fields = array_keys((array) $data);
-				
-					// $ip_block = new IpBlockModel;
-					// $ip_block->setData($data);
-					// $ip_block->setFields($fields);
-					// $ip_block->insert();
-					// $message = 'Ip blocked';
-				// }
-				// else {
-					// $message = 'The ip has been blocked';
-				// }
-			// }
-			
-			// break;
-	// }
-// }
-
 ?>
 	<div id="content">
 		<h2>Rooms</h2>
@@ -154,7 +97,7 @@ switch ($action)
 		<input type="text" name="capacity_exclusive" id="capacity_exclusive" size="5" value="<?=$room['capacity_exclusive'];?>" />
 	</div>
 	<div class="block_field">
-		<button type="submit" value="Add">Add</button>
+		<button type="submit" value="Edit">Edit</button>
 	</div>
 </form>
 

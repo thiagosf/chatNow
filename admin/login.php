@@ -12,6 +12,7 @@ if (isset($_POST) && !empty($_POST)) {
 	$load = $admin_model->load();
 	
 	if (!empty($load)) {
+		$_SESSION['id_admin'] = $load[0]['id'];
 		$_SESSION['user_admin'] = $load[0]['user'];
 		$_SESSION['password_admin'] = $load[0]['password'];
 	}

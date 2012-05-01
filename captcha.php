@@ -19,15 +19,12 @@ else {
 	$image_back = imagecreatetruecolor(100, 50);
 	imagecolorallocate($image_back, 50, 50, 250);
 }
- 
+
 // Code
-$text = (string) ((rand() % 8999) + 1000);
+$text = $_SESSION['captcha_code'];
 
 // Font ttf free
 $font = 'images/Prociono-Regular.otf';
- 
-// Save code in session
-$_SESSION['captcha_code'] = $text;
 
 $x = 0;
 for ($i = 0; $i < strlen($text); $i++) {
