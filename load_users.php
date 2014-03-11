@@ -23,7 +23,7 @@ if (isset($_SESSION['chat_login']['id_user'])) {
 	
 	foreach ($load as $line) {
 		// Retorno
-		$user = Filters::convert(htmlentities(Filters::toIso($line['user'])));
+		$user = Filters::convert(htmlentities($line['user']));
 		$return .= '<a href="#" id="user_'.$line['id'].'" rel="'.$line['id'].'">'.$user.'</a>';
 		$json[] = '["'.$line['id'].'", "'.$user.'"]';
 	}
