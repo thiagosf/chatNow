@@ -43,7 +43,7 @@ if (isset($_SESSION['chat_login']['id_user'])) {
 		
 		$id_user 		= $line['id_user'];
 		$to_user 		= $line['to_user'];
-		$user_name 		= Filters::convert(htmlentities(Filters::toIso($line['user'])));
+		$user_name 		= Filters::convert(htmlentities($line['user']));
 		
 		// Images active condition
 		if (ACTIVE_IMAGES) {
@@ -76,7 +76,7 @@ if (isset($_SESSION['chat_login']['id_user'])) {
 		
 		// Message commom
 		if (!isset($image_message) && !isset($video_message)) {
-			$message 		= Filters::convert(htmlentities(Filters::toIso($line['message'])));
+			$message 		= Filters::convert(htmlentities($line['message']));
 			$message		= Emoticons::transform($message);
 		}
 		
@@ -111,7 +111,7 @@ if (isset($_SESSION['chat_login']['id_user'])) {
 			$user = $users->load_all();
 			
 			if (isset($user[0]) && count($user[0])) {
-				$name_to = Filters::convert(htmlentities(Filters::toIso($user[0]['user'])));
+				$name_to = Filters::convert(htmlentities($user[0]['user']));
 			}
 			
 			$class_box .= ($line['reserved'] ? ' box_msg_reserved inline_green' : '');
