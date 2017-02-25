@@ -2,9 +2,10 @@
 
 require('app/autoload.php');
 
-if (!isset($_SESSION['chat_login']['id_user']) || !isset($_SESSION['chat_login']['user']) 
-		|| !isset($_SESSION['chat_login']['id_room']) 
-		|| !isset($_SESSION['chat_login']['timestamp'])) {
+if (!isset($_SESSION['chat_login']['id_user'],
+	   $_SESSION['chat_login']['user'],
+	   $_SESSION['chat_login']['id_room'],
+	   $_SESSION['chat_login']['timestamp'])) {
 	$_SESSION['chat_login'] = array();
 	header('location: login.php');
 	exit;
