@@ -85,7 +85,7 @@ if (isset($_SESSION['chat_login']['id_user'])) {
 		
 		// Alert message: entry or exit
 		if ($line['type']) {
-			$message = Locale::setContent($message);
+			$message = SiteLocale::setContent($message);
 			
 			$class_box = 'box_msg_'.$line['type'];
 			
@@ -104,7 +104,7 @@ if (isset($_SESSION['chat_login']['id_user'])) {
 		// Common message
 		else {
 			// Whose behalf he is receiving
-			$name_to = Locale::setContent('All users');
+			$name_to = SiteLocale::setContent('All users');
 			$users = new UsersModel;
 			$users->setCond('active = 1');
 			$users->setCond('id = '.$line['to_user']);
@@ -126,9 +126,9 @@ if (isset($_SESSION['chat_login']['id_user'])) {
 				$return .= '<span class="head_msg">';
 					$return .= '<span class="time_msg">'.date('H:i:s', strtotime($line['timestamp'])).'</span> ';
 					$return .= '<span class="user_name" rel="'.$id_user.'">'.$user_name.'</span> ';
-					$return .= (($line['reserved']) ? '<b>('.Locale::setContent('reservedly').')</b> ' : '').' '.Locale::setContent('tells').' ';
+					$return .= (($line['reserved']) ? '<b>('.SiteLocale::setContent('reservedly').')</b> ' : '').' '.SiteLocale::setContent('tells').' ';
 					$return .= '<span class="name_to" rel="'.$to_user.'">'.$name_to.'</span>: ';
-					$return .= '<span class="remove_message">'.Locale::setContent('Hide message').'</span> ';
+					$return .= '<span class="remove_message">'.SiteLocale::setContent('Hide message').'</span> ';
 				$return .= '</span>';
 				$return .= '<span class="message_sent">'.$message.'</span>';
 			$return .= '</div>';

@@ -1,6 +1,6 @@
 <?php
 
-class Locale
+class SiteLocale
 {
 	const LANG = LANGUAGE;
 	

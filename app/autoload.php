@@ -64,7 +64,7 @@ function pr ($array) {
 }
 
 // Language
-$language = Locale::getLanguage();
+$language = SiteLocale::getLanguage();
 
 // Configuration
 require_once('config.php');

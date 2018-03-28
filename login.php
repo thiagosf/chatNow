@@ -153,7 +153,7 @@ $_SESSION['captcha_code'] = $text;
 	<?php
 
 	if (isset($message)) {
-		echo '<p class="message_error">'.Locale::setContent($message).'</p>';
+		echo '<p class="message_error">'.SiteLocale::setContent($message).'</p>';
 	}
 
 	?>
@@ -164,7 +164,7 @@ $_SESSION['captcha_code'] = $text;
 			<input type="text" name="user" id="user" maxlength="20" /> 
 		</div>
 		<div class="block_field">
-			<label for="id_room"><?=Locale::setContent('Room');?></label>
+			<label for="id_room"><?=SiteLocale::setContent('Room');?></label>
 			<select name="id_room" id="id_room">
 			<?php
 			
@@ -190,7 +190,7 @@ $_SESSION['captcha_code'] = $text;
 			<input type="text" name="captcha" id="captcha" maxlength="4" />
 		</div>
 		<div class="block_field block_submit">
-			<button type="submit" value="<?=Locale::setContent('Enter');?>"><?=Locale::setContent('Enter');?></button>
+			<button type="submit" value="<?=SiteLocale::setContent('Enter');?>"><?=SiteLocale::setContent('Enter');?></button>
 		</div>
 	</form>
 </div>
